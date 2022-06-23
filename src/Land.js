@@ -26,8 +26,8 @@ const Land = () => {
     if (res.ok) {
       const data1 = await res.json();
       setTimeout(() => {
-        // console.log(data1);
-        // console.log(data1[0].phonetics);
+        console.log(data1);
+        console.log(data1[0].phonetics);
         console.log("Data Fetched");
         setData(data1);
         setIsPending(false);
@@ -103,8 +103,9 @@ const Land = () => {
       <div className="info">
         {isPending && (
           <div className="info1">
-            <img className="img" src={img1} alt="" />{" "}
-            <h3>Efile, Eje ko load</h3>
+            {/* <img className="img" src={img1} alt="" />{" "}
+            <h3>Efile, Eje ko load</h3> */}
+            <p className="loading">Loading</p>
           </div>
         )}
         {Fetch && (
@@ -117,7 +118,7 @@ const Land = () => {
         )}
         {notFetch && (
           <div className="info3">
-            <img className="img" src={img} alt="" />
+            {/* <img className="img" src={img} alt="" /> */}
             <h3>{data2.title}</h3>
             <p>{data2.message} Check your spelling and search again.</p>
           </div>
