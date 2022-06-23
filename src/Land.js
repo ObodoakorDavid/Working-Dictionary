@@ -109,19 +109,10 @@ const Land = () => {
         )}
         {Fetch && (
           <div className="info2">
-            {/* <p>
-              <b> {data[0].word}</b>
-            </p> */}
-
             <p className="deff">
               <span>Meaning: </span>
               {data[0].meanings[0].definitions[changeDef].definition}
             </p>
-
-            {/* <p className="not">Not the definition you were looking for? </p>
-            <button onClick={NextDefinition} className="btn">
-              Check Another Definition
-            </button> */}
           </div>
         )}
         {notFetch && (

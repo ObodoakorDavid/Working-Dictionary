@@ -1,7 +1,14 @@
 /** @format */
+
+.dictionary {
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
 .dictionary > h1 {
   color: rgb(27, 26, 26);
-  padding: 0 5%;
+  padding: 20px 5%;
+  margin: 0;
 }
 .img {
   width: 30%;
@@ -21,11 +28,17 @@
   color: white;
   border: none;
   padding: 9px 10px;
-  border-radius: 50px;
+  border-radius: 10px;
+  font-weight: bold;
   /* box-shadow: 3px 3px rgb(233, 227, 227); */
 }
+
+.form-div button:hover{
+  color: rgb(27, 26, 26); 
+}
 .form-div input {
-  border-radius: 50px;
+  border-radius: 8px;
+  padding-left: 10px;
   width: 70%;
   height: 30px;
   border: none;
@@ -39,8 +52,8 @@
   padding-right: 5%;
 }
 .info2 span {
-    font-weight: bold;
-    color: rgb(162, 161, 233);
+  font-weight: bold;
+  color: rgb(162, 161, 233);
 }
 .info2 h3 {
   text-align: left;
